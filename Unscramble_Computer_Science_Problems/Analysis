@@ -1,0 +1,70 @@
+Runtime Analysis (TIME COMPLEXITIES) of Each Task:-
+====================================================================================================================================
+
+TASK 0 :-
+Since it's an index accessing problem, Complexity is O(1).
+It's a direct access to first and last elements.
+
+Fixed amount of time in every run for below code:-
+
+print("First record of texts, {} texts {} at time {}".format(firsttext[0], firsttext[1], firsttext[2]))
+print("Last record of calls, {} calls {} at time {}, lasting {} seconds".format(lastcall[0],lastcall[1],lastcall[2],lastcall[3]))
+
+Total Complexity - 
+Time Complexity = O(1)
+Space Complexity = O(1)
+
+====================================================================================================================================
+
+TASK 1 :-
+Iteration:-
+	for total in totalrecords - This will have O(n) complexity
+
+Addition of element:- 
+numberset.add(total[0]) - O(1) complexity
+
+Length operation - O(1) complexity
+
+Total Complexity - 
+Time Complexity = O(n)
+Space Complexity = O(n)
+
+====================================================================================================================================
+
+TASK 2 :- 
+Iteration:- 
+	for call in calls - O(n) complexity
+Space :- 
+	Dictionary used - O(n)
+Total Complexity - 
+Time Complexity = O(n)
+Space Complexity = O(n)
+
+====================================================================================================================================
+
+TASK 3 :-
+Iteration:-
+	1) for call in calls - O(n)
+	2) for numbers in callednumbers - O(n)
+	3) sorted function - O(nlogn)
+	4) for num in callednumbers - O(n)
+Total time = O(n) + O(n) + O(nlogn) + O(n) = O(nlogn)
+Total Complexity - 
+Time Complexity = O(nlogn)
+Space Complexity = O(n)
+
+====================================================================================================================================
+
+TASK 4 :-
+Iteration:- 
+	1) There are 2 loops with each complexity as O(n):-
+	for text in texts
+	for call in calls
+	2) sorted function - O(nlogn)
+	Total Time = O(n) + O(nlogn)
+Total Complexity - 
+Time Complexity = O(nlogn)
+Space Complexity = O(n)
+
+====================================================================================================================================
+
